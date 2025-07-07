@@ -1,39 +1,46 @@
-📊 Stock Trend & Price Prediction App
-This is a Streamlit-based dashboard that predicts:
+# 📊 Stock Trend & Price Prediction App
 
-Next day stock trends (up or down) using an LSTM with Focal Loss.
+## 👥 Authors  
+This project was collaboratively developed by:  
+- **Bhavesh Chamaria** – [GitHub Profile](https://github.com/bhavesh0609)  
+- **Kasukurthi Sujeeth** – [GitHub Profile](https://github.com/Princesujeeth7)  
 
-Next day close prices using a custom gradient boosting-like ensemble (with Linear Regression or Decision Tree base models).
+
+## 📝 Description  
+
+This is a **Streamlit-based dashboard** that predicts:
+
+- 📈 **Next-day stock trends** (up or down) using an **LSTM with Focal Loss**  
+- 💰 **Next-day close prices** using a **custom gradient boosting-like ensemble** (Linear Regression or Decision Tree base models)
 
 It also:
 
-Plots ROC curves, confusion matrices, and training loss.
+- ✅ Plots **ROC curves**, **confusion matrices**, and **training loss**  
+- 📊 Shows **error distribution histograms**  
+- 🧠 Fits multiple **probability distributions** to model residual errors (**AIC comparison**)
 
-Shows error distribution histograms.
 
-Fits multiple probability distributions to model residual errors (AIC comparison).
+## 🚀 Features  
 
-🚀 Features
-🔍 Ticker search using Yahoo Finance API
+- 🔍 Ticker search using **Yahoo Finance API**  
+- 📅 Flexible **time frame selection** (days, weeks, months, etc.)  
+- 🧠 **Deep learning** with LSTM + custom **Focal Loss**  
+- 🌳 Boosting model with **adjustable learning rate** and **estimators**  
+- 📉 **Residual error analysis** with **AIC-based distribution fitting**  
+- 📊 Interactive plots and metrics via **Streamlit dashboard**
 
-📈 Flexible time frame selection (days, weeks, months, etc.)
 
-🧠 Deep learning with LSTM (custom Focal Loss for imbalanced data)
+## ⚙️ Setup Instructions
 
-🌳 Boosting model with adjustable learning rate and number of estimators
+### 1️⃣ Clone the repository
 
-📝 Residual error analysis with distribution fitting (AIC-based selection)
+```bash
+git clone https://github.com/Princesujeeth7/stockmarket.git
+cd stockmarket
 
-📊 Beautiful plots and metrics on Streamlit dashboard
-
-2️⃣ Create and activate a virtual environment
-✅ For Linux / Mac
-bash
-python3 -m venv venv
-source venv/bin/activate
-✅ For Windows
-bash
 python -m venv venv
 venv\Scripts\activate
+
 pip install -r req.txt
-python -m streamlit run app.py #run this vs code terminal 
+
+python -m streamlit run app.py
