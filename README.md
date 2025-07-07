@@ -29,6 +29,18 @@ It also:
 - 📉 **Residual error analysis** with **AIC-based distribution fitting**  
 - 📊 Interactive plots and metrics via **Streamlit dashboard**
 
+---
+
+## 📂 Project Structure
+
+```bash
+├── tradingapp.py           # Streamlit App with LSTM & Boosting logic
+├── tradingbot.ipynb        # Additional experimental notebook (optional)
+├── req.txt                 # Required libraries
+└── README.md               # You're here
+
+```
+---
 
 ## ⚙️ Setup Instructions
 
@@ -37,10 +49,14 @@ It also:
 ```bash
 git clone https://github.com/Princesujeeth7/stockmarket.git
 cd stockmarket
-
+```
+```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
+```
 pip install -r req.txt
-
+```
+```
 python -m streamlit run app.py
+```
